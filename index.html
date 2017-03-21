@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src='js/jquery-3.2.0.js'></script>
+    <script src='js/scripts.js'></script>
+    <title>Bank of Epicodus</title>
+  </head>
+  <body>
+    <h1 class="jumbotron" id='page-header'>Welcome to the Bank of Epicodus</h1>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-xs-6" id="registration">
+          <h2>Register a new account:</h2>
+          <form id="new-account">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id='name' class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="initial-deposit">Initial Deposit:</label>
+              <input type="number" id='initial-deposit' class="form-control">
+            </div>
+            <button type="submit" class="btn btn-info">Create Account</button>
+          </form>
+        </div>
+        <div class="col-xs-6" id="account-activity">
+          <h2>Deposit or Withdraw funds:</h2>
+          <form id='transaction'>
+            <div class="form-group">
+              <label for="deposit-amount">Deposit Amount:</label>
+              <div class="input-group">
+                <input type="number" id='deposit-amount' class="form-control">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-info">Deposit</button>
+                </span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="withdrawal-amount">Withdrawal Amount:</label>
+              <div class="input-group">
+                <input type="number" id='withdrawal-amount' class="form-control">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-info">Withdrawal</button>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12" id="account-balance">
+          <h4>Current Balance:</h4>
+          <div class="well">
+            <span id="current-balance"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
