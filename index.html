@@ -20,7 +20,7 @@
             </div>
             <div class="form-group">
               <label for="initial-deposit">Initial Deposit:</label>
-              <input type="number" id='initial-deposit' class="form-control">
+              <input type="float" id='initial-deposit' class="form-control">
             </div>
             <button type="submit" class="btn btn-info">Create Account</button>
           </form>
@@ -31,18 +31,18 @@
             <div class="form-group">
               <label for="deposit-amount">Deposit Amount:</label>
               <div class="input-group">
-                <input type="number" id='deposit-amount' class="form-control">
+                <input type="float" id='deposit-amount' class="form-control">
                 <span class="input-group-btn">
-                  <button type="submit" class="btn btn-info">Deposit</button>
+                  <button type="button" class="btn btn-info" id='deposit'>Deposit</button>
                 </span>
               </div>
             </div>
             <div class="form-group">
               <label for="withdrawal-amount">Withdrawal Amount:</label>
               <div class="input-group">
-                <input type="number" id='withdrawal-amount' class="form-control">
+                <input type="float" id='withdrawal-amount' class="form-control">
                 <span class="input-group-btn">
-                  <button type="submit" class="btn btn-info">Withdrawal</button>
+                  <button type="button" class="btn btn-info" id='withdraw'>Withdrawal</button>
                 </span>
               </div>
             </div>
